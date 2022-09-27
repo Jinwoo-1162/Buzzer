@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#cookie {
+  height: 20em;
+  width: 20em;
+  transition: 0.1s;
+}
+
+#cookie:hover {
+  transform: scale(1.05);
+}
+
+#cookie:active {
+  transform: scale(0.95);
+}
