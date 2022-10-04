@@ -1,8 +1,7 @@
-function About() {
+function ErrorPage() {
   return (
     <div className="App">
-      <h1>Hi this is about!</h1>
-      <p> Do you want to know more about us?</p>
+      <h1>404 Page not found</h1>
       <a href="/">Home</a>
       <br />
       <a href="/About">About</a>
@@ -10,4 +9,4 @@ function About() {
   );
 }
 
-export default About;
+export default ErrorPage;
