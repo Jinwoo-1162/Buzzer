@@ -1,6 +1,6 @@
 import "./TextBox.css";
 
-function TextBox(props) {
-  return <div className="textbox">{props.textcontent}</div>;
+function TextBox({textcontent}) {
+  return <div className="textbox">{textcontent}</div>;
 }
 export default TextBox;
