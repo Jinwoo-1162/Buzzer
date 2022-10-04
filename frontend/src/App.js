@@ -1,22 +1,23 @@
-import cookie from "./cookie.png";
 import "./App.css";
-import { useState } from "react";
+import CookieClicker from "./CookieClicker";
+import Home from "./Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const incrementCount = () => {
-    setCount((count) => count + 1);
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Cookie Clicker</h2>
-        <img id="cookie" src={cookie} onClick={incrementCount} />
-        <h2>{count}</h2>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cookie" element={<CookieClicker />} />
+      </Routes>
+    </BrowserRouter>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <h2>Cookie Clicker</h2>
+    //     <img id="cookie" src={cookie} onClick={incrementCount} />
+    //     <h2>{count}</h2>
+    //   </header>
+    // </div>
   );
 }
 
