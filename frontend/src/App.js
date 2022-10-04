@@ -1,7 +1,8 @@
-import "./App.css";
-import CookieClicker from "./CookieClicker";
-import Home from "./Home";
+import "./CSS/App.css";
+import CookieClicker from "./Views/CookieClicker";
+import Home from "./Views/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ErrorPage from "./Views/ErrorPage";
 
 function App() {
   return (
@@ -9,15 +10,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cookie" element={<CookieClicker />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h2>Cookie Clicker</h2>
-    //     <img id="cookie" src={cookie} onClick={incrementCount} />
-    //     <h2>{count}</h2>
-    //   </header>
-    // </div>
   );
 }
 
