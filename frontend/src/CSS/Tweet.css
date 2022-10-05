@@ -1,0 +1,32 @@
+.tweet-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: white;
+  width: 50vw;
+  height: 20vh;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.tweet-box:hover {
+  transform: scale(1.02);
+}
+
+.profile-pic {
+  margin-left: 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+
+.profile-content {
+  display: flex;
+  gap: 10px;
+  align-self: flex-start;
+  /* justify-content: center; */
+  align-items: center;
+}
