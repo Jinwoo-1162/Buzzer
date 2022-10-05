@@ -1,6 +1,7 @@
 .Header {
     height: 200vh;
     font-size: 15px;
+    margin-left: 20px;
 
 }
 
@@ -19,5 +20,6 @@
 }
 
 #button {
-    background-color: blue;
+    background-color: rgb(181, 184, 192);
+    width: 75px;
 }
