@@ -1,7 +1,12 @@
-import React from "react";
-import "..CSS./TweetMaker.css";
+/*
+This file is a WIP and currently it does nothing
+I was trying to make it display fake tweets on the Homepage
+*/
 
-function SidebarMaker(props) {
+import React from "react";
+import "../CSS/TweetMaker.css";
+
+function TweetMaker(props) {
   const { user, dateCreated, text } = props;
   return (
     <div className={`TweetMaker`}>
