@@ -1,5 +1,5 @@
 import React from "react";
-import "./TweetMaker.css";
+import "..CSS./TweetMaker.css";
 
 function SidebarMaker(props) {
   const { user, dateCreated, text } = props;

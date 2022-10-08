@@ -1,6 +1,6 @@
 import React from "react";
-import "./Header.css";
-import DefaultProfile from "./DefaultTwitterpfp.png";
+import "../CSS/Header.css";
+import DefaultProfile from "../Images/DefaultTwitterpfp.png";
 
 function Header({ text }) {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./SidebarMaker.css";
+import "../CSS/SidebarMaker.css";
 
 function SidebarMaker({ text }) {
   return (

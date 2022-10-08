@@ -1,7 +1,8 @@
 import React from "react";
-import "./App.css";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
+import "./CSS/App.css";
+import Sidebar from "./Components/Sidebar.js"
+import { BrowserRouter } from "react-router-dom";
+import Header from "./Components/Header";
 
 function App() {
   return (

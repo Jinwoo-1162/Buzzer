@@ -1,7 +1,7 @@
 import React from "react";
-import "./Sidebar.css";
+import "../CSS/Sidebar.css";
 import SidebarMaker from "./SidebarMaker";
-import BuzzerLogo from "./BuzzerLogo2.png";
+import BuzzerLogo from "../Images/BuzzerLogo2.png";
 
 function Sidebar() {
   return (
