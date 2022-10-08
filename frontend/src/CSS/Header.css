@@ -1,0 +1,25 @@
+.Header {
+    height: 200vh;
+    font-size: 15px;
+    margin-left: 20px;
+
+}
+
+#pfp {
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#prompt {
+    float: right;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 50;
+}
+
+#button {
+    background-color: rgb(181, 184, 192);
+    width: 75px;
+}
