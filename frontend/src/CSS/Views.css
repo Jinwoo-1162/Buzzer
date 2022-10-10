@@ -10,3 +10,7 @@ h2 {
 p {
   color: white;
 }
+
+.content-container {
+  padding: 3em;
+}

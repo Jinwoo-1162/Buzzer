@@ -9,6 +9,9 @@ function Navbar(props) {
       <a href="/cookie" className="page-link">
         <div className="nav-div">Cookie</div>
       </a>
+      <a href="/quote" className="page-link">
+        <div className="nav-div">Quote</div>
+      </a>
       <a href="/bad" className="page-link">
         <div className="nav-div">404</div>
       </a>
