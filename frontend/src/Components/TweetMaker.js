@@ -7,7 +7,7 @@ import React from "react";
 import "../CSS/TweetMaker.css";
 
 function TweetMaker(props) {
-  const { user, dateCreated, text } = props;
+  const { text } = props;
   return (
     <div className={`TweetMaker`}>
       <h2>{text}</h2>
