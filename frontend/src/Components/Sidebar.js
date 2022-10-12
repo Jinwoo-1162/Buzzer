@@ -10,7 +10,7 @@ function Sidebar() {
       <SidebarMaker text="Home" />
       <SidebarMaker text="Explore" />
       <SidebarMaker text="Notifications" />
-      <SidebarMaker text="Messages" />
+      <SidebarMaker text="Messages" url="/messages" />
       <SidebarMaker text="Bookmarks" />
       <SidebarMaker text="Lists" />
       <SidebarMaker text="Profile" />
