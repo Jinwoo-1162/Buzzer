@@ -7,4 +7,5 @@ function Messages() {
     </div>
   );
 }
- export default Messages;
+
+export default Messages;
