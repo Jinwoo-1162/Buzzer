@@ -2,22 +2,25 @@ import React from "react";
 import "../CSS/Header.css";
 import DefaultProfile from "../Images/DefaultTwitterpfp.png";
 
-function Header({ text }) {
+function Header() {
   return (
-    <div className={`Header`}>
-      <h1> Latest Tweets</h1>
+    <div class="new-tweet">
       <img id="pfp" src={DefaultProfile} alt="DefaultPFP"></img>
-      <h2 id="prompt">What's Happening?</h2>
-      <div className="tweet-button">
+      <form id="addTweet">
+        <input
+          type="text"
+          class="tweet-text-content"
+          placeholder="What's happening?"
+        />
         <button id="button" onClick={Suprise}>
           Tweet
         </button>
-      </div>
+      </form>
     </div>
   );
 }
 function Suprise() {
-  alert("BOO!");
+  alert("Congrats you clicked it!");
 }
 
 export default Header;
