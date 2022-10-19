@@ -6,8 +6,8 @@ function SidebarMaker({ text, url }) {
   return (
     <div className={`sidebarMaker`}>
       <h2>
-        {text}
-        {/* <Link to={url}>{text}</Link> */}
+        {/* {text} */}
+        <Link to={url}>{text}</Link>
       </h2>
     </div>
   );

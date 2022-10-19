@@ -9,12 +9,6 @@ function Home() {
     <div className="Home">
       <Sidebar />
       <Header />
-      {/* <a href="/randomQuote">random</a>
-      <a href="/About">about</a>
-      <a href="/Home">home</a> */}
-      <Link to="/">Home</Link>
-      <Link to="/messages">LINKMessages</Link>
-      <a href="/messages">AMessages</a>
     </div>
   );
 }
