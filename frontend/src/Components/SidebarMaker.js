@@ -4,7 +4,9 @@ import "../CSS/SidebarMaker.css";
 function SidebarMaker({ text }) {
   return (
     <div className={`sidebarMaker`}>
-      <h2>{text}</h2>
+      <a className="nav-link" href={text == "Home" ? "/" : text} > 
+        <h2 className="nav-link">{text}</h2>
+      </a>
     </div>
   );
 }
