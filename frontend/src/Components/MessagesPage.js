@@ -1,6 +1,9 @@
 import Sidebar from "../Components/Sidebar";
 import "../CSS/MessagesInbox.css";
 import { MessagesInbox } from "./MessagesInbox";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faGear } from '@fortawesome/free-solid-svg-icons'
+
 
 export function MessagesPage() {
   return (
@@ -10,8 +13,8 @@ export function MessagesPage() {
         <div className="messages-row">
           <h2>Messages</h2>
           <div className="message-icons">
-            <div>gear</div>
-            <div>envelope</div>
+            <FontAwesomeIcon icon={faGear} />
+            <FontAwesomeIcon icon={faEnvelope} />
           </div>
         </div>
         <h1>Welcome to your inbox!</h1>
