@@ -10,17 +10,14 @@ function Sidebar() {
       <a href="/">
         <SidebarMaker text="Home" />
       </a>
-      <a href="/explore">
-        <SidebarMaker text="Explore" />
-      </a>
-      <a href="/notifications">
-        <SidebarMaker text="Notifications" />
-      </a>
+      <SidebarMaker text="Explore" />
+      <SidebarMaker text="Notifications" />
       <SidebarMaker text="Messages" />
       <SidebarMaker text="Bookmarks" />
       <SidebarMaker text="Lists" />
       <SidebarMaker text="Profile" />
       <SidebarMaker text="More" />
+      <button id="button"> Tweet </button>
     </div>
   );
 }

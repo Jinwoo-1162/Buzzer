@@ -1,13 +1,16 @@
 import React from "react";
 import "../CSS/Home.css";
 import Sidebar from "../Components/Sidebar.js";
-import Header from "../Components/Header";
+import Timeline from "../Components/Timeline";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="home">
       <Sidebar />
-      <Header />
+      <div className="home_header">
+        <Timeline />
+      </div>
+      <div className="post"></div>
     </div>
   );
 }
