@@ -16,7 +16,7 @@ function NewTweet({ pfp, username, text, imglink }) {
             <p>{text}</p>
           </div>
         </div>
-        <img src={imglink} alt="Embed"></img>
+        <img src={imglink}></img>
       </div>
     </div>
   );
