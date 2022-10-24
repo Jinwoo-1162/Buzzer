@@ -5,7 +5,7 @@ export function MessagesPage() {
     <div className="explore">
       <Sidebar />
       <div className="messages-page">
-        <h1>This is a messages page!</h1>
+        <h1>Messages</h1>
       </div>
     </div>
   );
