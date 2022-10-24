@@ -9,6 +9,9 @@ function SidebarMaker({ text, url }) {
         {/* {text} */}
         <Link to={url}>{text}</Link>
       </h2>
+      <a className="nav-link" href={text == "Home" ? "/" : text} > 
+        <h2 className="nav-link">{text}</h2>
+      </a>
     </div>
   );
 }
