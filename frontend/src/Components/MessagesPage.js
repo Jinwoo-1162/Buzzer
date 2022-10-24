@@ -1,9 +1,7 @@
 import Sidebar from "../Components/Sidebar";
 import "../CSS/MessagesInbox.css";
-import { MessagesInbox } from "./MessagesInbox";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faGear } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faGear } from "@fortawesome/free-solid-svg-icons";
 
 export function MessagesPage() {
   return (
@@ -13,8 +11,14 @@ export function MessagesPage() {
         <div className="messages-row">
           <h2>Messages</h2>
           <div className="message-icons">
-            <FontAwesomeIcon icon={faGear} />
-            <FontAwesomeIcon icon={faEnvelope} />
+            <div>
+              <button>
+                <FontAwesomeIcon icon={faGear} />
+              </button>
+              <button>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </button>
+            </div>
           </div>
         </div>
         <h1>Welcome to your inbox!</h1>
@@ -22,7 +26,7 @@ export function MessagesPage() {
           Drop a line, share Tweets and more with private conversations between
           you and others on Twitter.
         </p>
-        <button>Write a message</button>
+        <button className="text-button">Write a message</button>
       </div>
       <div className="select-message">
         <div>
@@ -31,7 +35,7 @@ export function MessagesPage() {
             Choose from your existing conversations, start a new one, or just
             keep swimming.
           </p>
-          <button>New message</button>
+          <button className="text-button">New message</button>
         </div>
       </div>
     </div>

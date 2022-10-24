@@ -27,16 +27,19 @@
 }
 
 .messages-page p {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
+  color: grey;
 }
 
-.messages-page button {
-    background-color: #B3A369;
-    color: white;
-    font-weight: 900;
-    font-size: 125%;
-    border-radius: 10px;
-    padding: 8px 24px;
-    /* border: none; */
-
+.text-button {
+  background-color: #b3a369;
+  color: white;
+  font-weight: 900;
+  font-size: 125%;
+  border-radius: 10px;
+  padding: 8px 24px;
+  /* border: none; */
+}
+.message-icons button {
+  margin: 5px;
 }
