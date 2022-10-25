@@ -5,6 +5,7 @@ import ForYou from "./Views/ForYou";
 import Trending from "./Views/Trending";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lists from "./Views/Lists.js";
+import Profile from "./Views/Profile.js";
 import { MessagesPage } from "./Components/MessagesPage";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Route path="/Explore" element = {<ForYou />}/>
         <Route path="/Explore/Trending" element = {<Trending />}/>
         <Route path="/Lists" element = {<Lists />}/>
-
+        <Route path="/Profile" element = {<Profile/>}/>
         <Route path="/Messages" element ={<MessagesPage />}/>
       </Routes>
     </BrowserRouter>
