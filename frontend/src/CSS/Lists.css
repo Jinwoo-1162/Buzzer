@@ -1,0 +1,93 @@
+/* .explore {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* in MainLists.js */
+  .mainLayout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e6ecf0;
+    width:100vh;
+  }
+
+  .header {
+    flex:1;
+    /* background-color: #e6ecf0; */
+    border-bottom: 1px solid #e6ecf0;
+  }
+  .pinnedLists {
+    flex:2;
+    border-bottom: 1px solid #eeeff0;
+    margin-top: -5px;
+
+  }
+  .discoverNewLists {
+    flex:5;
+    border-bottom: 1px solid #e6ecf0;
+    margin-top: -5px;
+  }
+  .yourLists {
+    flex:4;
+    border-bottom: 1px solid #e6ecf0;
+    margin-top: -5px;
+  }
+
+  /* in Header.js */
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+
+  }
+
+  .listTitle {
+    flex: 7;
+  }
+  /* .newListIcon{
+    flex: 1;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+
+  }
+  .moreIcon{
+    align-items: center;
+    justify-content: center;  
+    flex: 1;
+  }  */
+
+
+  /* Accounts.js */
+  .accountContainer{
+    display:flex;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+  }
+  .accountIconContainer{
+    flex: 1;
+    margin-right: 20px;
+  } 
+  .title{
+    flex: 7;
+  } 
+  .followIconContainer{
+    flex: 1;
+  } 
+  .accountIcon{
+    width:60px;
+    border-radius:20px;
+  } 
+  .heartIcon{
+    width:30px;
+  } 
