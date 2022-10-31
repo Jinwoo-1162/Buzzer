@@ -1,0 +1,22 @@
+.sidebarMaker {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .sidebarMaker:hover {
+    background-color: #F1E5AC;
+    color: var(--buzzer-color);
+    transition: color 100ms ease-out;
+  }
+
+  .sidebarMaker> h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+  }

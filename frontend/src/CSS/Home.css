@@ -1,7 +1,16 @@
-.tweet-feed {
+.home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.home_header {
+  position: sticky;
+  top: 0;
+  padding: 15px 20px;
+  border-right : 1px solid #e6ecf0;
+  border-left : 1px solid #e6ecf0;
 }

@@ -1,40 +1,16 @@
-import Navbar from "../Components/Navbar";
-import Tweet from "../Components/Tweet";
+import React from "react";
 import "../CSS/Home.css";
-import "../CSS/Views.css";
+import Sidebar from "../Components/Sidebar.js";
+import Timeline from "../Components/Timeline";
 
-function Home(props) {
-  const tweet1 = {
-    username: "Jinwoo Park",
-    image:
-      "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    text: "hello world",
-  };
-
-  const tweet2 = {
-    username: "Steve Meme",
-    image:
-      "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    text: "My name is Steve",
-  };
-
-  const tweet3 = {
-    username: "Sample Name",
-    image:
-      "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    text: "Free me from this terrifying existence",
-  };
-
+function Home() {
   return (
     <div className="home">
-      <Navbar />
-      <h2 className="header">Home Page</h2>
-      <p>This should contain information about your home page</p>
-      <div className="tweet-feed">
-        <Tweet tweetInfo={tweet1} />
-        <Tweet tweetInfo={tweet2} />
-        <Tweet tweetInfo={tweet3} />
+      <Sidebar />
+      <div className="home_header">
+        <Timeline />
       </div>
+      <div className="post"></div>
     </div>
   );
 }
