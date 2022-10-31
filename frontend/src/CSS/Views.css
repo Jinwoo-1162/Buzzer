@@ -1,0 +1,16 @@
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.content-container {
+  padding: 3em;
+}

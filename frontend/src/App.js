@@ -15,7 +15,6 @@ function App() {
         <Route path="/Explore" element = {<ForYou />}/>
         <Route path="/Explore/Trending" element = {<Trending />}/>
         <Route path="/Lists" element = {<Lists />}/>
-
         <Route path="/Messages" element ={<MessagesPage />}/>
       </Routes>
     </BrowserRouter>
