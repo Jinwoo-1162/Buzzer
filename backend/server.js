@@ -54,6 +54,8 @@ app.get('/', (req, res) => {
     res.json({"message": "If you are seeing this then the test was successful :)"});
 });
 
+require('./app/routes/sample.routes.js')(app);
+
 // listen for requests
 app.listen(8080, () => {
     console.log("Server is listening on port 8080");

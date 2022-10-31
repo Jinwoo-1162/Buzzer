@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const sample = require('../controllers/sample.controller.js');
+    const sample = require('../controllers/sample.controllers.js');
 
     // Retrieve all samples
     app.get('/sample', sample.find);

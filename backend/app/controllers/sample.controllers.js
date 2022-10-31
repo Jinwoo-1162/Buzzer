@@ -1,4 +1,4 @@
-const Sample = require('../models/sample.model.js');
+const Sample = require('../models/sample.models.js');
 
 exports.find = async (req, res) => {
     await Sample.find({})
