@@ -7,12 +7,9 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <img id="logo" src={BuzzerLogo} alt="Buzzer pic" />
-      <a href="/">
-        <SidebarMaker text="Home" />
-      </a>
+      <a href="/"> <SidebarMaker text="Home" /></a>
       <SidebarMaker text="Explore" />
       <SidebarMaker text="Notifications" />
-      <a href = "Notifications"> </a>
       <SidebarMaker text="Messages" />
       <SidebarMaker text="Bookmarks" />
       <SidebarMaker text="Lists" />
