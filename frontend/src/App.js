@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Explore" element = {<ForYou />}/>
-        <Route path="/Explore/Trending" element = {<Trending />}/>
+        <Route path="/Trending" element = {<Trending />}/>
         <Route path="/Lists" element = {<Lists />}/>
         <Route path="/Profile" element = {<Profile/>}/>
         <Route path="/Messages" element ={<MessagesPage />}/>
