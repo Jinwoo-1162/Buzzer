@@ -1,6 +1,7 @@
 import React from "react";
 import "./CSS/App.css";
 import Home from "./Views/Home.js";
+import Notifications from "./Views/Notifications";
 import ForYou from "./Views/ForYou";
 import Trending from "./Views/Trending";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Notifications" element={<Notifications/>} />
         <Route path="/Explore" element = {<ForYou />}/>
         <Route path="/Trending" element = {<Trending />}/>
         <Route path="/Lists" element = {<Lists />}/>
