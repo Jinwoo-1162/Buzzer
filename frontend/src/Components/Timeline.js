@@ -9,7 +9,10 @@ function Timeline() {
     event.preventDefault();
   };
   return (
-    <div class="timeline">
+    <div className="timeline">
+      <div className="timeline_heading">
+        <span>Latest Tweets</span>
+      </div>
       <form id="timeline_addTweet" onSubmit={handleSubmit}>
         <div className="timeline_text_content">
           <img id="timeline_pfp" src={DefaultProfile} alt="DefaultPFP"></img>
