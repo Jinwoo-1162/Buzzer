@@ -41,6 +41,9 @@ function Timeline() {
         imglink={
           "https://media.tenor.com/HwviI3ONhTgAAAAC/avatar-the-last-airbender-iroh.gif"
         }
+        comments={15}
+        retweets={57}
+        likes={123}
       />
       <NewTweet
         pfp={
