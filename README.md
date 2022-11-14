@@ -1,5 +1,5 @@
 # Buzzer
-## Twitter clone for GT Web Dev Fall 2022 Team A\
+## Twitter clone for GT Web Dev Fall 2022 Team A
 ### Developers:
 Harry Huang\
 Husna Jakeer\
