@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
     res.json({"message": "If you are seeing this then the test was successful :)"});
 });
 
-require('./app/routes/sample.routes.js')(app);
+require('./app/routes/tweet.routes.js')(app);
 
 // listen for requests
 app.listen(8080, () => {

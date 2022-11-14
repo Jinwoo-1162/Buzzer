@@ -2,11 +2,32 @@ import React, { useState } from "react";
 import "../CSS/Timeline.css";
 import DefaultProfile from "../Images/DefaultTwitterpfp.png";
 import NewTweet from "./NewTweet";
+import axios from "axios";
 
 function Timeline() {
   const [tweet, setTweet] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
+    // alert("Tweet sucessfully not submitted!");
+    axios.post(
+      "http://localhost:8080/tweet/add",
+      {
+        // data to sent to the server - post body
+        // it can be an empty object
+      },
+      {
+        // specify query parameters
+        params: {
+          author: "defaultUser",
+          bodyText: tweet,
+        },
+      }
+    )
+    .then(res => res.status)
+    .catch(err => {
+      console.log(err);
+    });
+    alert("Tweet sucessfully submitted!");
   };
   return (
     <div className="timeline">
@@ -17,6 +38,7 @@ function Timeline() {
         <div className="timeline_text_content">
           <img id="timeline_pfp" src={DefaultProfile} alt="DefaultPFP"></img>
           <input
+            id="timeline_input"
             type="text"
             value={tweet}
             onChange={(update) => setTweet(update.target.value)}
@@ -26,9 +48,7 @@ function Timeline() {
         </div>
         <button
           id="timeline_button"
-          onClick={() => {
-            alert("Tweet sucessfully not submitted!");
-          }}
+          type="submit"
         >
           Tweet
         </button>

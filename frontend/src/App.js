@@ -8,7 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lists from "./Views/Lists.js";
 import Profile from "./Views/Profile.js";
 import { MessagesPage } from "./Components/MessagesPage";
-
+import axios from "axios";
+import { useEffect } from "react";
 function App() {
   return (
     <BrowserRouter>
