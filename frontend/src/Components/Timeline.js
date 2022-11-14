@@ -45,6 +45,7 @@ function Timeline() {
         </div>
         <button
           id="timeline_button"
+          type="submit"
         >
           Tweet
         </button>
