@@ -5,7 +5,7 @@ Harry Huang\
 Husna Jakeer\
 Claire Lee\
 Sherwin Liang\
-Ian Rausch\
+Ian Rausch
 
 ### Project Manager:
 Jinwoo Park
