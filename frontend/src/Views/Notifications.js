@@ -6,7 +6,7 @@ function Notifications() {
   return (
     <div className="Notifications"  style={{display: "flex", flexDirection: "row"}}>
         <Sidebar />
-        <h2>People you Follow</h2>
+        <h1>People You Follow</h1>
       </div>
   );
 }
