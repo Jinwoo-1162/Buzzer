@@ -3,10 +3,31 @@ import "../CSS/Timeline.css";
 import DefaultProfile from "../Images/DefaultTwitterpfp.png";
 import NewTweet from "./NewTweet";
 import axios from "axios";
+
 function Timeline() {
   const [tweet, setTweet] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
+    // alert("Tweet sucessfully not submitted!");
+    axios.post(
+      "http://localhost:8080/tweet/add",
+      {
+        // data to sent to the server - post body
+        // it can be an empty object
+      },
+      {
+        // specify query parameters
+        params: {
+          author: "defaultUser",
+          bodyText: tweet,
+        },
+      }
+    )
+    .then(res => res.status)
+    .catch(err => {
+      console.log(err);
+    });
+    alert("Tweet sucessfully submitted!");
   };
   return (
     <div class="timeline">
@@ -24,29 +45,6 @@ function Timeline() {
         </div>
         <button
           id="timeline_button"
-          onClick={() => {
-            console.log("hello");
-            // alert("Tweet sucessfully not submitted!");
-            axios.post(
-              "http://localhost:8080/tweet/add",
-              {
-                // data to sent to the server - post body
-                // it can be an empty object
-              },
-              {
-                // specify query parameters
-                params: {
-                  author: "defaultUser",
-                  bodyText: tweet,
-                },
-              }
-            )
-            .then(res => res.status)
-            .catch(err => {
-              console.log(err);
-            });
-            alert("Tweet sucessfully submitted!");
-          }}
         >
           Tweet
         </button>
