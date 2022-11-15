@@ -6,6 +6,12 @@
   /*  min-width: 500px;
     max-width: 700px; */
 }
+.timeline_heading {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700
+}
 
 .timeline-tweet-text-content {
   border: none;

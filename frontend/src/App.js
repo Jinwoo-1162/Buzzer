@@ -15,12 +15,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Notifications" element={<Notifications/>} />
-        <Route path="/Explore" element = {<ForYou />}/>
-        <Route path="/Trending" element = {<Trending />}/>
-        <Route path="/Lists" element = {<Lists />}/>
-        <Route path="/Profile" element = {<Profile/>}/>
-        <Route path="/Messages" element ={<MessagesPage />}/>
+        <Route path="/Notifications" element={<Notifications />} />
+        <Route path="/Explore" element={<ForYou />} />
+        <Route path="/Trending" element={<Trending />} />
+        <Route path="/Lists" element={<Lists />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Messages" element={<MessagesPage />} />
       </Routes>
     </BrowserRouter>
   );

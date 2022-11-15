@@ -30,7 +30,10 @@ function Timeline() {
     alert("Tweet sucessfully submitted!");
   };
   return (
-    <div class="timeline">
+    <div className="timeline">
+      <div className="timeline_heading">
+        <span>Latest Tweets</span>
+      </div>
       <form id="timeline_addTweet" onSubmit={handleSubmit}>
         <div className="timeline_text_content">
           <img id="timeline_pfp" src={DefaultProfile} alt="DefaultPFP"></img>
@@ -58,6 +61,9 @@ function Timeline() {
         imglink={
           "https://media.tenor.com/HwviI3ONhTgAAAAC/avatar-the-last-airbender-iroh.gif"
         }
+        comments={15}
+        retweets={57}
+        likes={123}
       />
       <NewTweet
         pfp={
