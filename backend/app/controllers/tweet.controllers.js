@@ -3,7 +3,9 @@ const Tweet = require('../models/tweet.models.js');
 exports.find = async (req, res) => {
     await Tweet.find({})
     .then(tweets => {
-        res.send(tweets);
+        res.send(tweets.sort((a, b) => {
+            return a.timeStamp < b.timeStamp ? 1 : a.timeStamp > b.timeStamp? -1 : 0;
+            }));
     }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while retrieving tweets."
