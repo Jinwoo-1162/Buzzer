@@ -56,9 +56,6 @@ function Timeline(props) {
         </button>
       </form>
       {props.tweetsList
-        .sort((a, b) => {
-          return a.timeStamp < b.timeStamp ? 1 : a.timeStamp > b.timeStamp? -1 : 0;
-        })
         .map((ele) => {
           return (
             <NewTweet
