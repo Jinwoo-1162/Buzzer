@@ -31,7 +31,10 @@ exports.addOne = async (req, res) => {
     const newTweet = new Tweet({
         author: req.query.author,
         bodyText: req.query.bodyText,
-        likes: 0
+        comments: 0,
+        retweets: 0,
+        likes: 0,
+        timeStamp: new Date(),
     });
 
     newTweet.save()

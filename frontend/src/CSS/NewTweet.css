@@ -35,6 +35,10 @@
     margin-bottom: 5px;
   }
   
+  .newtweet_userInfo > span {
+    display: inline-flex;
+    
+  }
 
   .newtweet_tweetMessage {
     margin-bottom: 10px;

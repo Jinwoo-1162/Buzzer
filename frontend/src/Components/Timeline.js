@@ -1,32 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/Timeline.css";
 import DefaultProfile from "../Images/DefaultTwitterpfp.png";
 import NewTweet from "./NewTweet";
 import axios from "axios";
 
-function Timeline() {
+function Timeline(props) {
   const [tweet, setTweet] = useState("");
+  useEffect(() => {
+    console.log(props.tweetsList);
+  }, [props.tweetsList]);
+
   const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     // alert("Tweet sucessfully not submitted!");
-    axios.post(
-      "http://localhost:8080/tweet/add",
-      {
-        // data to sent to the server - post body
-        // it can be an empty object
-      },
-      {
-        // specify query parameters
-        params: {
-          author: "defaultUser",
-          bodyText: tweet,
+    axios
+      .post(
+        "http://localhost:8080/tweet/add",
+        {
+          // data to sent to the server - post body
+          // it can be an empty object
         },
-      }
-    )
-    .then(res => res.status)
-    .catch(err => {
-      console.log(err);
-    });
+        {
+          // specify query parameters
+          params: {
+            author: "defaultUser",
+            bodyText: tweet,
+          },
+        }
+      )
+      .then((res) => res.status)
+      .catch((err) => {
+        console.log(err);
+      });
     alert("Tweet sucessfully submitted!");
   };
   return (
@@ -46,13 +51,28 @@ function Timeline() {
             placeholder="What's happening?"
           />
         </div>
-        <button
-          id="timeline_button"
-          type="submit"
-        >
+        <button id="timeline_button" type="submit">
           Tweet
         </button>
       </form>
+      {props.tweetsList
+        .sort((a, b) => {
+          return a.timeStamp < b.timeStamp ? 1 : a.timeStamp > b.timeStamp? -1 : 0;
+        })
+        .map((ele) => {
+          return (
+            <NewTweet
+              pfp={DefaultProfile}
+              username={ele.author}
+              text={ele.bodyText}
+              imglink={""}
+              comments={ele.comments}
+              retweets={ele.retweets}
+              likes={ele.likes}
+              timeStamp={new Date(ele.timeStamp).toLocaleString()}
+            />
+          );
+        })}
 
       <NewTweet
         pfp={"https://i.imgur.com/a5nXjAH.jpeg"}
