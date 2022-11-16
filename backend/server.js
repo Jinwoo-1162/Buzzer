@@ -65,7 +65,7 @@ app.get("/", (req, res) => {
 });
 
 require("./app/routes/tweet.routes.js")(app);
-require("./app/routes/user.routes.js")(app);
+// require("./app/routes/user.routes.js")(app);
 
 // listen for requests
 app.listen(8080, () => {
