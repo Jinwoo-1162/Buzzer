@@ -6,7 +6,16 @@ import shareIcon from "../Images/share.png";
 import retweetIcon from "../Images/rebuzz.png";
 import commentIcon from "../Images/comment.png";
 
-function NewTweet({ pfp, username, text, imglink, comments, retweets, likes, timeStamp}) {
+function NewTweet({
+  pfp,
+  username,
+  text,
+  imglink,
+  comments,
+  retweets,
+  likes,
+  timeStamp,
+}) {
   const [commentsCount, setCommentsCount] = useState(
     isNaN(comments) ? 0 : comments
   );
@@ -38,7 +47,10 @@ function NewTweet({ pfp, username, text, imglink, comments, retweets, likes, tim
       <div className="newtweet_body">
         <div className="newtweet_user">
           <div className="newtweet_userInfo">
-            <h3>{username}<span> · {timeStamp}</span></h3> 
+            <h3>
+              {username}
+              <span className="newtweet_timestamp"> · {timeStamp}</span>
+            </h3>
           </div>
           <div className="newtweet_tweetMessage">
             <p>{text}</p>

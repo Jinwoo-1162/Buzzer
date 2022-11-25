@@ -55,21 +55,20 @@ function Timeline(props) {
           Tweet
         </button>
       </form>
-      {props.tweetsList
-        .map((ele) => {
-          return (
-            <NewTweet
-              pfp={DefaultProfile}
-              username={ele.author}
-              text={ele.bodyText}
-              imglink={""}
-              comments={ele.comments}
-              retweets={ele.retweets}
-              likes={ele.likes}
-              timeStamp={new Date(ele.timeStamp).toLocaleString()}
-            />
-          );
-        })}
+      {props.tweetsList.map((ele) => {
+        return (
+          <NewTweet
+            pfp={DefaultProfile}
+            username={ele.author}
+            text={ele.bodyText}
+            imglink={""}
+            comments={ele.comments}
+            retweets={ele.retweets}
+            likes={ele.likes}
+            timeStamp={new Date(ele.timeStamp).toLocaleString()}
+          />
+        );
+      })}
 
       <NewTweet
         pfp={"https://i.imgur.com/a5nXjAH.jpeg"}
@@ -81,6 +80,7 @@ function Timeline(props) {
         comments={15}
         retweets={57}
         likes={123}
+        timeStamp={new Date().toLocaleString()}
       />
       <NewTweet
         pfp={
@@ -89,11 +89,13 @@ function Timeline(props) {
         username={"Dogie"}
         text="Im Dogie"
         imglink={"https://i.imgur.com/bzswIVK.jpeg"}
+        timeStamp={new Date().toLocaleString()}
       />
 
       <NewTweet
         pfp={DefaultProfile}
         username={"New User 2000"}
+        timeStamp={new Date().toLocaleString()}
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
     </div>
