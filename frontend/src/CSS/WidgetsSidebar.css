@@ -1,0 +1,58 @@
+.widgets-sidebar {
+    max-width: 350px;
+    flex: auto;
+}
+
+#search-icon {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.widgets-searchbar {
+   display: flex;
+   align-items: center;
+   background-color: #e6ecf0;
+   border-radius: 20px;
+   padding: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
+  }
+
+  .widgets-searchbar > input {
+   border: none;
+   outline: none;
+   background-color: #e6ecf0;
+  }
+
+
+.widgets-whats-happening {
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+
+.widgets-whats-happening > h3 {
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.widgets-whats-happening > span {
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.widgets-who-to-follow {
+   margin-top: 15px;
+   margin-left: 10px;
+   padding: 20px;
+   background-color: #f5f8fa;
+   border-radius: 20px;
+}
+
+.widgets-who-to-follow > span {
+    font-size: 18px;
+    font-weight: 700;
+ }
+ 
