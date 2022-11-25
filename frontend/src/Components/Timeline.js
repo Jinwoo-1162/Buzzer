@@ -6,6 +6,8 @@ import axios from "axios";
 
 function Timeline(props) {
   const [tweet, setTweet] = useState("");
+  const [mediaLink, setMediaLink] = useState("");
+
   useEffect(() => {
     console.log(props.tweetsList);
   }, [props.tweetsList]);
@@ -25,6 +27,7 @@ function Timeline(props) {
           params: {
             author: "defaultUser",
             bodyText: tweet,
+            media: mediaLink,
           },
         }
       )
@@ -50,6 +53,15 @@ function Timeline(props) {
             class="timeline-tweet-text-content"
             placeholder="What's happening?"
           />
+
+          <input
+            id="timeline_input"
+            type="text"
+            value={mediaLink}
+            onChange={(update) => setMediaLink(update.target.value)}
+            class="timeline-tweet-text-content"
+            placeholder="Insert Media Link"
+          />
         </div>
         <button id="timeline_button" type="submit">
           Tweet
@@ -61,7 +73,7 @@ function Timeline(props) {
             pfp={DefaultProfile}
             username={ele.author}
             text={ele.bodyText}
-            imglink={""}
+            imglink={ele.media}
             comments={ele.comments}
             retweets={ele.retweets}
             likes={ele.likes}
