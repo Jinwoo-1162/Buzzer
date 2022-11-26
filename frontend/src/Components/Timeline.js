@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../CSS/Timeline.css";
 import DefaultProfile from "../Images/DefaultTwitterpfp.png";
+import MediaIcon from "../Images/ImageIcon.png";
 import NewTweet from "./NewTweet";
 import axios from "axios";
+import Popup from "./Popup";
 
 function Timeline(props) {
   const [tweet, setTweet] = useState("");
   const [mediaLink, setMediaLink] = useState("");
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   useEffect(() => {
     console.log(props.tweetsList);
   }, [props.tweetsList]);
+
+  function displayPopup(event) {
+    event.preventDefault();
+    setButtonPopup(true);
+  }
 
   const handleSubmit = (event) => {
     // event.preventDefault();
@@ -42,7 +50,7 @@ function Timeline(props) {
       <div className="timeline_heading">
         <span>Latest Tweets</span>
       </div>
-      <form id="timeline_addTweet" onSubmit={handleSubmit}>
+      <form id="timeline_addTweet">
         <div className="timeline_text_content">
           <img id="timeline_pfp" src={DefaultProfile} alt="DefaultPFP"></img>
           <input
@@ -53,19 +61,15 @@ function Timeline(props) {
             class="timeline-tweet-text-content"
             placeholder="What's happening?"
           />
-
-          <input
-            id="timeline_input"
-            type="text"
-            value={mediaLink}
-            onChange={(update) => setMediaLink(update.target.value)}
-            class="timeline-tweet-text-content"
-            placeholder="Insert Media Link"
-          />
         </div>
-        <button id="timeline_button" type="submit">
-          Tweet
-        </button>
+        <div className="timeline-header-buttons">
+          <button id="timeline-attach-media" onClick={displayPopup}>
+            <img id="media-symbol" src={MediaIcon}></img>
+          </button>
+          <button id="timeline_button" onClick={handleSubmit}>
+            Tweet
+          </button>
+        </div>
       </form>
       {props.tweetsList.map((ele) => {
         return (
@@ -81,6 +85,17 @@ function Timeline(props) {
           />
         );
       })}
+
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <input
+          id="timeline_input"
+          type="text"
+          value={mediaLink}
+          onChange={(update) => setMediaLink(update.target.value)}
+          class="timeline-media-link-content"
+          placeholder="Insert Media Link"
+        />
+      </Popup>
     </div>
   );
 }
