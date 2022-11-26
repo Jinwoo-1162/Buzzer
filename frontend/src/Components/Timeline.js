@@ -85,7 +85,6 @@ function Timeline(props) {
           />
         );
       })}
-
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <input
           id="timeline_input"
