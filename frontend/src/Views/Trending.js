@@ -6,11 +6,13 @@ function Trending() {
   return (
     <div className="explore">
       <Sidebar />
-      <div className="explore-page">
-        <ExploreHeader pageName="trending"/>
-        <TrendingMaker rank = "1"/>
-        <TrendingMaker rank = "2"/>
-        <TrendingMaker rank = "3"/>
+      <div className="explore-page-header">
+        <div className="explore-page">
+          <ExploreHeader pageName="trending" />
+          <TrendingMaker rank="1" />
+          <TrendingMaker rank="2" />
+          <TrendingMaker rank="3" />
+        </div>
       </div>
     </div>
   );
