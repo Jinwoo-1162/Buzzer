@@ -8,6 +8,10 @@
   margin-right: 10px;
 }
 
+.search-section {
+  padding-left: 2%;
+}
+
 .widgets-searchbar {
    display: flex;
    align-items: center;

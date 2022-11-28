@@ -20,7 +20,7 @@ function Home() {
       <div className="home_header">
         <Timeline tweetsList={allTweets} />
       </div>
-      <WidgetsSidebar />
+      <WidgetsSidebar showSearchBox="true"/>
     </div>
   );
 }

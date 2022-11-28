@@ -41,7 +41,13 @@ exports.findByContent = async (req, res) => {
     const keyword = req.params.content;
     await Tweet.find({})
     .then(tweets => {
-        res.send(tweets.filter(item => item.bodyText.toLowerCase().includes(keyword)));
+        res.send(tweets.sort((a, b) => {
+            return a.timeStamp < b.timeStamp
+              ? 1
+              : a.timeStamp > b.timeStamp
+              ? -1
+              : 0;
+          }).filter(item => item.bodyText.toLowerCase().includes(keyword)));
     }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while retrieving tweets."

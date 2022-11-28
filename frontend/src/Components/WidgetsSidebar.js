@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/WidgetsSidebar.css";
+import SearchBox from "./SearchBox";
 import {
   TwitterTimelineEmbed,
   TwitterFollowButton,
@@ -10,13 +11,20 @@ import searchIcon from "../Images/searchIcon.png";
 import AccountDisplay from "./AccountDisplay.js";
 import DefaultPFP from "../Images/DefaultTwitterpfp.png";
 
-function WidgetsSidebar() {
+function WidgetsSidebar(props) {
   return (
     <div className="widgets-sidebar">
-      <div className="widgets-searchbar">
+			{props.showSearchBox=="true"?(
+				<div className="search-section">
+					<SearchBox className="search-bar"/>
+				</div>
+			):(<div></div>)}
+			
+      {/* <div className="widgets-searchbar">
         <img id="search-icon" src={searchIcon}></img>
         <input placeholder="Search Twitter" type="text" />{" "}
-      </div>
+      </div> */}
+
 
       <div className="widgets-whats-happening">
         <span>What's Happening</span>
