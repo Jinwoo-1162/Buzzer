@@ -1,6 +1,11 @@
 # Buzzer
-Twitter clone for GT Web Dev Fall 2022 Team A
-Claire Lee
-Husna Jakeer
+## Twitter clone for GT Web Dev Fall 2022 Team A
+### Developers:
+Harry Huang\
+Husna Jakeer\
+Claire Lee\
+Sherwin Liang\
 Ian Rausch
-Harry Huang
+
+### Project Manager:
+Jinwoo Park

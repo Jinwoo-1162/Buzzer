@@ -1,49 +1,98 @@
 .newtweet {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid #e6ecf0;
-    padding-bottom: 5px;
-    margin-top: 0px;
-  }
-  .newtweet_avatar {
-    margin: 0;
-    padding: 20px;
-    width: 50px;
-    height: 70px;
-  }
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #e6ecf0;
+  padding-bottom: 5px;
+  margin-top: 0px;
+}
 
-  #newtweet_pfp {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    padding: 5px;
-   }
+.newtweet_avatar {
+  margin: 0;
+  padding: 20px;
+  width: 50px;
+  height: 70px;
+}
+
+#newtweet_pfp {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 5px;
+}
 
 
-  .newtweet_body {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  .newtweet_body > img {
-    border-radius: 20px;
-    max-width: 500px;
-  }
+.newtweet_body {
+  flex: 1;
+  padding: 10px;
+}
 
-  .newtweet_userInfo > h3 {
-    font-size: 15px;  
-    margin-bottom: 5px;
-  }
-  
+.newtweet_body>img {
+  border-radius: 20px;
+  max-width: 500px;
+}
 
-  .newtweet_tweetMessage {
-    margin-bottom: 10px;
-    font-size: 15px;
-  }
+.newtweet_userInfo>h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
 
-  p {
-    margin: 0;
-  }
+.newtweet_timestamp {
 
-  
-  
+  font-weight: 400;
+  color: #536471;
+}
+
+.newtweet_tweetMessage {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.newTweet_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: #F1E5AC;
+  color: var(--buzzer-color);
+  transition: color 0.5s ease-out;
+}
+
+.button_span {
+  position: absolute;
+  margin-left: 10px;
+  font-size: 13px;
+  font-family: "TwitterChirp";
+}
+
+#share_symbol {
+  width: 75%;
+  height: auto;
+}
+
+#comment_symbol {
+  width: 75%;
+  height: auto;
+}
+
+#retweet_symbol {
+  width: 75%;
+  height: auto;
+}
+
+#like_symbol {
+  width: 75%;
+  height: auto;
+}

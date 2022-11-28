@@ -1,12 +1,13 @@
 import React from "react";
 import "../CSS/Notifications.css";
 import Sidebar from "../Components/Sidebar"
+import NotificationsHeader from "../Components/NotificationsHeader";
 
 function Notifications() {
   return (
-    <div className="Notifications"  style={{display: "flex", flexDirection: "row"}}>
+    <div className="notifications"  style={{display: "flex", flexDirection: "row"}}>
         <Sidebar />
-        <h1>People You Follow</h1>
+        <NotificationsHeader pageName = "notifications-page" />
       </div>
   );
 }
