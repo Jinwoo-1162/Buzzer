@@ -1,6 +1,7 @@
 import NewTweet from "../Components/NewTweet";
 import ExploreHeader from "../Components/ExploreHeader";
 import Sidebar from "../Components/Sidebar";
+import WidgetsSidebar from "../Components/WidgetsSidebar";
 import "../CSS/Explore.css";
 function Explore() {
   return (
@@ -22,6 +23,7 @@ function Explore() {
           />
         </div>
       </div>
+      <WidgetsSidebar />
     </div>
   );
 }

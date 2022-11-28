@@ -1,6 +1,7 @@
 import "../CSS/SearchBox.css";
 import { useNavigate, createSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import searchIcon from "../Images/searchIcon.png";
 function SearchBox(props) {
   const navigate = useNavigate();
   const [term, setTerm] = useState(props.init);

@@ -1,5 +1,6 @@
 import ExploreHeader from "../Components/ExploreHeader";
 import Sidebar from "../Components/Sidebar";
+import WidgetsSidebar from "../Components/WidgetsSidebar";
 import TrendingMaker from "../Components/TrendingMaker";
 import "../CSS/Explore.css";
 function Trending() {
@@ -14,6 +15,7 @@ function Trending() {
           <TrendingMaker rank="3" />
         </div>
       </div>
+      <WidgetsSidebar />
     </div>
   );
 }
