@@ -1,22 +1,20 @@
+import NewTweet from "../Components/NewTweet";
 import ExploreHeader from "../Components/ExploreHeader";
 import Sidebar from "../Components/Sidebar";
 import WidgetsSidebar from "../Components/WidgetsSidebar";
-import TrendingMaker from "../Components/TrendingMaker";
 import "../CSS/Explore.css";
-function Trending() {
+function Explore() {
   return (
     <div className="explore">
       <Sidebar />
       <div className="explore-page-header">
         <div className="explore-page">
-          <ExploreHeader pageName="trending" />
-          <TrendingMaker rank="1" />
-          <TrendingMaker rank="2" />
-          <TrendingMaker rank="3" />
+          <ExploreHeader pageName="foryou" />
         </div>
       </div>
+      <WidgetsSidebar />
     </div>
   );
 }
 
-export default Trending;
+export default Explore;

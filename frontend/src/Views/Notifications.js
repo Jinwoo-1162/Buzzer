@@ -2,13 +2,15 @@ import React from "react";
 import "../CSS/Notifications.css";
 import Sidebar from "../Components/Sidebar"
 import NotificationsHeader from "../Components/NotificationsHeader";
+import WidgetsSidebar from "../Components/WidgetsSidebar";
 
 function Notifications() {
   return (
-    <div className="notifications"  style={{display: "flex", flexDirection: "row"}}>
+    <div className="notifications" >
         <Sidebar />
         <NotificationsHeader pageName = "notifications-page" />
-      </div>
+        <WidgetsSidebar />
+    </div>
   );
 }
 

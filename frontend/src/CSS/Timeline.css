@@ -20,7 +20,9 @@
 }
 
 .timeline_text_content {
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
   display: flex;
 }
 
@@ -35,7 +37,6 @@
   display: flex;
   flex-direction: column;
   border-bottom : 1px solid #e6ecf0;
-
 }
 
 #timeline_pfp {
@@ -58,3 +59,32 @@
   margin-bottom: 10px;
   cursor: pointer;
 }
+
+.timeline-header-buttons {
+  display: flex;
+  padding: 5px;
+  margin-left: 80px;
+}
+
+#timeline-attach-media {
+  margin-top: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+  #timeline-attach-media:hover {
+    background-color: #F1E5AC;
+    color: var(--buzzer-color);
+    transition: color 0.5s ease-out;
+  }
+
+  .timeline-media-link-content {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 550px;
+    }

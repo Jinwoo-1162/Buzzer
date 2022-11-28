@@ -1,12 +1,15 @@
 module.exports = (app) => {
   const tweet = require("../controllers/tweet.controllers.js");
 
-  // Retrieve all samples
+  // Retrieve all tweets
   app.get("/tweet", tweet.find);
 
-  // Retrieves samples accordng to name
-  app.get("/tweet/:name", tweet.findByName);
+  // Retrieves tweets accordng to name
+  app.get("/tweet/user/:name", tweet.findByName);
 
-  // Adds a sample
+  //Retrives tweets according to keywords
+  app.get("/tweet/:content", tweet.findByContent);
+
+  // Adds a tweet
   app.post("/tweet/add", tweet.addOne);
 };
