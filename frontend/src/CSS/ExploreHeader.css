@@ -32,52 +32,6 @@ li a:hover {
   background-color: var(--white);
 }
 
-.search-box {
-  --search-height:42px;
-  position: relative;
-  display: flex;
-  transition: 0.2s;
-  border: solid 1px transparent;
-  border-radius: calc(var(--search-height) / 2)/50%;
-  background-color: var(--border-color);
-}
-.search-box:focus-within {
-  background-color: transparent;
-  border-color: var(--main-color);
-}
-.search-box:focus-within .icon {
-  filter: grayscale(0) opacity(1);
-}
-.search-box .icon {
-  margin: auto 10px;
-  transform: scale(-1, 1);
-}
-.search-box input {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  /* reset input */
-  padding: 5px 10px;
-  width: 100%;
-  height: var(--search-height);
-}
-.search-box input::-webkit-input-placeholder {
-  font-size: 1rem;
-  overflow: visible;
-  line-height: 1;
-}
-.search-box input::-moz-placeholder {
-  font-size: 10px;
-  overflow: visible;
-  line-height: 1;
-}
-.search-box input:placeholder {
-  font-size: 10px;
-  overflow: visible;
-  line-height: 1;
-}
-
 .nav-list {
   display: flex;
   overflow: hidden;

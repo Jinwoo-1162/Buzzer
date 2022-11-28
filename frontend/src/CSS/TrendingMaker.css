@@ -1,6 +1,4 @@
 .trending-maker:hover{
-  background-color: #F1E5AC;
-}
-.trending-maker {
-  width: max-content;
+  background-color: #fcf9ed;
+  border-radius: 10px;
 }
