@@ -6,7 +6,7 @@ import "../CSS/Explore.css";
 function Trending() {
   return (
     <div className="explore">
-      <Sidebar />
+      <Sidebar pageName="Explore"/>
       <div className="explore-page-header">
         <div className="explore-page">
           <ExploreHeader pageName="trending" />
