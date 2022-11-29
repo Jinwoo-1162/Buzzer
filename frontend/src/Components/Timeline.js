@@ -95,7 +95,11 @@ function Timeline(props) {
           placeholder="Insert Media Link"
         />
       </Popup>
+      <footer>
+        <a href="https://www.flaticon.com/free-icons/heart" title="heart icons" style={{ color: "lightgray", fontSize: 10, }}>Heart icons created by Vlad Szirka - Flaticon</a>
+      </footer>
     </div>
+
   );
 }
 

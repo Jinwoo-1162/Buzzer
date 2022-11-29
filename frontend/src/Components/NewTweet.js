@@ -1,10 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../CSS/NewTweet.css";
 import likeIcon from "../Images/heart.png";
 import shareIcon from "../Images/share.png";
 import retweetIcon from "../Images/rebuzz.png";
 import commentIcon from "../Images/comment.png";
+import filledheart from "../Images/filledheart.png";
+import axios from "axios";
 
 function NewTweet({
   pfp,
@@ -33,10 +35,15 @@ function NewTweet({
   };
 
   const [likesCount, setLikesCount] = useState(isNaN(likes) ? 0 : likes);
+  const [likeImage, setLikeImage] = useState(likeIcon)
 
   const incrementLikes = () => {
     setLikesCount((likesCount) => likesCount + 1);
+    setLikeImage(filledheart);
   };
+
+
+
 
   // Is there a better way to update cooments, retweets, and likes without making seperate functions for each value?
   return (
@@ -67,7 +74,7 @@ function NewTweet({
             <span className="button_span">{retweetsCount}</span>
           </button>
           <button onClick={incrementLikes}>
-            <img id="like_symbol" src={likeIcon} alt="heart symbol"></img>
+            <img id="like_symbol" src={likeImage} alt="heart symbol"></img>
             <span className="button_span">{likesCount}</span>
           </button>
           <button>
@@ -80,3 +87,5 @@ function NewTweet({
 }
 
 export default NewTweet;
+
+
