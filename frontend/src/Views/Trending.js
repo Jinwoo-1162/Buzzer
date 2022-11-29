@@ -15,6 +15,7 @@ function Trending() {
           <TrendingMaker rank="3" />
         </div>
       </div>
+      <WidgetsSidebar />
     </div>
   );
 }
