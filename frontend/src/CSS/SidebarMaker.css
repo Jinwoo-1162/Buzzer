@@ -5,6 +5,10 @@
     border-radius: 30px;
     padding-left: 15px;
   }
+  .tab-is-selected {
+    background-color: #F1E5AC;
+    color: var(--buzzer-color);
+  }
   .sidebarMaker:hover {
     background-color: #F1E5AC;
     color: var(--buzzer-color);

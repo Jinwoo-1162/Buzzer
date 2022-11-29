@@ -6,7 +6,7 @@ import { faEnvelope, faGear } from "@fortawesome/free-solid-svg-icons";
 export function MessagesPage() {
   return (
     <div className="messages-page">
-      <Sidebar />
+      <Sidebar pageName="Messages"/>
       <div className="compose-column">
         <div className="messages-row">
           <h2>Messages</h2>
