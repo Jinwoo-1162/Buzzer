@@ -5,7 +5,7 @@ import Sidebar from "../Components/Sidebar";
 function Notifications() {
   return (
     <div className="notifications">
-      <Sidebar />
+      <Sidebar pageName="Notifications"/>
       <h2>People you Follow</h2>
     </div>
   );
