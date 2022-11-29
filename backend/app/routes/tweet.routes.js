@@ -12,4 +12,7 @@ module.exports = (app) => {
 
   // Adds a tweet
   app.post("/tweet/add", tweet.addOne);
+
+  // claire??
+  app.put("/tweet/updateLike/:_id", tweet._id);
 };

@@ -62,7 +62,7 @@ exports.addOne = async (req, res) => {
     media: req.query.media,
     comments: 0,
     retweets: 0,
-    likes: 0,
+    likes: req.query.likes,
     timeStamp: new Date(),
   });
 
@@ -75,3 +75,45 @@ exports.addOne = async (req, res) => {
       res.status(500).send(err);
     });
 };
+
+
+exports.updateLike = async (req, res) => {
+  const newTweet = new Tweet({
+    author: req.query.author,
+    bodyText: req.query.bodyText,
+    media: req.query.media,
+    comments: 0,
+    retweets: 0,
+    likes: req.params.likes,
+    timeStamp: new Date(),
+  });
+
+  newTweet
+    .save()
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send(err);
+    });
+};
+
+
+
+// exports.updateLike = async (req, res) => {
+//   await Tweet.find({ name: req.params._id })
+//     .then((tweets) => {
+//       if (!tweets) {
+//         return res.status(404).send({
+//           message: `No entries in database Tweet not found with name ${req.params.author}`,
+//         });
+//       }
+//       tweets.likes = req.query.likes
+//       tweets.save()    })
+//     .catch((err) => {
+//       return res.status(500).send({
+//         message: `Error retrieving Tweet with name ${req.params.author}`,
+//       });
+//     });
+// };
+
