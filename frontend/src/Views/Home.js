@@ -16,7 +16,7 @@ function Home() {
   };
   return (
     <div className="home">
-      <Sidebar />
+      <Sidebar pageName="Home"/>
       <div className="home_header">
         <Timeline tweetsList={allTweets} />
       </div>

@@ -6,7 +6,7 @@ import Activity from "../Components/Activity";
 function Profile() {
     return (
         <div className="home">
-            <Sidebar />
+            <Sidebar pageName="Profile"/>
             <div className="home_header">
                 <Activity />
             </div>

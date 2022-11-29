@@ -6,7 +6,7 @@ import NotificationsHeader from "../Components/NotificationsHeader";
 function Notifications() {
   return (
     <div className="notifications"  style={{display: "flex", flexDirection: "row"}}>
-        <Sidebar />
+        <Sidebar pageName="Notifications"/>
         <NotificationsHeader pageName = "notifications-page" />
       </div>
   );

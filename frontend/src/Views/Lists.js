@@ -6,7 +6,7 @@ import "../CSS/Lists.css";
 function Lists() {
   return (
     <div className="explore">
-      <Sidebar />
+      <Sidebar pageName="Lists"/>
       <MainLists />
     </div>
   );
