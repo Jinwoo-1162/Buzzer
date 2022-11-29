@@ -1,0 +1,47 @@
+  .header {
+    flex:1;
+    /* background-color: #e6ecf0; */
+    border-bottom: 1px solid #e6ecf0;
+  }
+  /* in Header.js */
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+
+  }
+  .username {
+    font-weight: 300;
+    color: gray;
+  }
+
+  /* Accounts.js */
+  .notificationsAccountContainer{
+    display:flex;
+    border-radius: 15px;
+    background-color: #fbf9ed;
+    margin-bottom: 30px;
+    margin-right: 20px;
+
+  }
+  .notificationsAccountIconContainer{
+    flex: 1;
+    margin-right: 20px;
+  } 
+  .title{
+    flex: 7;
+  } 
+  .followIconContainer{
+    flex: 1;
+    font-size: medium;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  .notificationsAccountIcon{
+    width:60px;
+    height: 60px;
+    border-radius:20px;
+  } 
+  .heartIcon{
+    width:30px;
+  }

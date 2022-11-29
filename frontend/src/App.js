@@ -1,7 +1,8 @@
 import React from "react";
 import "./CSS/App.css";
 import Home from "./Views/Home.js";
-import Notifications from "./Views/Notifications";
+import AllNotifications from "./Views/AllNotifications";
+import Verified from "./Views/Verified";
 import ForYou from "./Views/ForYou";
 import Trending from "./Views/Trending";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,7 +17,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Notifications" element={<Notifications />} />
+        <Route path="/Notifications" element={<AllNotifications />} />
+        <Route path="/Verified" element={<Verified />} />
         <Route path="/Explore" element={<ForYou />} />
         <Route path="/Trending" element={<Trending />} />
         <Route path="/Lists" element={<Lists />} />
